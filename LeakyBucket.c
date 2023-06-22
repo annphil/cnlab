@@ -21,5 +21,6 @@ void main(){
 		printf("No of dropped packets: %d", dropped);
 		bucketStatus += input - outputRate;	
 		printf("\nBucket status after outgoing: %d", bucketStatus);
+		n--;
 	}
 }
