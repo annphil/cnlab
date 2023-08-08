@@ -6,7 +6,7 @@
 #include <unistd.h>
 
 #define SERVER_IP "127.0.0.1"
-#define PORT 2000
+#define PORT 8080
 #define MAX_BUFFER 1024
 
 int main() {
@@ -23,7 +23,9 @@ int main() {
     // Set server address
     bzero(&servaddr, sizeof(servaddr));
     servaddr.sin_family = AF_INET;
-    servaddr.sin_port = htons(PORT);if (inet_pton(AF_INET, SERVER_IP, &servaddr.sin_addr) <= 0) {
+    servaddr.sin_port = htons(PORT);
+
+    if (inet_pton(AF_INET, SERVER_IP, &servaddr.sin_addr) <= 0) {
         perror("inet_pton failed");
         exit(EXIT_FAILURE);
     }
