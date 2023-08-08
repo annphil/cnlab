@@ -5,7 +5,7 @@
 #include <netinet/in.h>
 #include <unistd.h>
 
-#define PORT 2000
+#define PORT 8080
 #define MAX_CLIENTS 10
 #define MAX_BUFFER 1024
 
