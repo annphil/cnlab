@@ -11,7 +11,6 @@
 #define PORT 8081
 #define SA struct sockaddr
 
-// Function designed for chat between client and server.
 void func(int connfd)
 {
     char buff[MAX];
